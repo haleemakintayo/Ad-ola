@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Ad-Ola</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="shortcut icon" href="img/store-solid (1).svg" type="image/x-icon">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splide/4.0.7/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css'">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+</head>
+<body>
+    <!--Main Navigation-->
+<!--Main Navigation-->
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container px-4 px-lg-5">
+              <a class="navbar-brand" href="#!"><img src="img/logo.png" height="35" /></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="Index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link active" href="products.html">All products</a></li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#!">All Products</a></li>
+                              <!-- <li><hr class="dropdown-divider" /></li>
+                              <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                              <li><a class="dropdown-item" href="#!">New Arrivals</a></li> -->
+                          </ul>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                      <button class="btn btn-outline-dark" type="submit">
+                          <i class="bi-cart-fill me-1"></i>
+                          Cart
+                          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+  
+  <!-- Jumbotron -->
+  <div class="bg-dark text-white py-5 bigb">
+    <div class="container py-5 ">
+      <h1 class="h1 display-4 display-md-3 display-lg-1">
+        Best products & <br />
+        brands in our store
+      </h1>
+      <p>
+        Trendy Products, Factory Prices, Excellent Service
+      </p> 
+      
+      <button type="button" class="btn btn-dark btn-lg">
+      <a href="#About" style="text-decoration: none; color: #f5f5f5;"> Learn more</a>
+      </button></a>
+      <button type="button"  class="btn btn-light shadow-0 text-dark pt-2 btn-lg" >
+        <a href="products.html" style="text-decoration: none; color: #1d1c1c;;"> <span class="pt-1">Purchase now</span></a>
+        
+      </button>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</header>
+<!-- Products -->
+<!-- <section>
+
+  <div class="container my-5">
+    <header class="mb-4">
+      <h3>Products</h3>
+    </header>
+
+    <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          data-mdb-tab-init
+          class="nav-link active"
+          id="home-tab0"
+          data-mdb-target="#home0"
+          type="button"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+        >
+         Seafood/Fish
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          data-mdb-tab-init
+          class="nav-link"
+          id="profile-tab0"
+          data-mdb-target="#profile0"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          Vegetables and spices
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          data-mdb-tab-init
+          class="nav-link"
+          id="contact-tab0"
+          data-mdb-target="#contact0"
+          type="button"
+          role="tab"
+          aria-controls="contact"
+          aria-selected="false"
+        >
+          Grains and flours
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent0">
+      <div
+        class="tab-pane fade show active"
+        id="home0"
+        role="tabpanel"
+        aria-labelledby="home-tab0"
+      >
+        Tab 1 content.
+      </div>
+      <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+        Tab 2 content
+      </div>
+      <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+        Tab 3 content
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/bongafish.jpeg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Boney/Bonga Fish/Eja Shawa</h5>
+            <p class="card-text">$22 for 5oz</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/crayfish.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Roasted Crayfish</h5>
+            <p class="card-text">$00.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/bonga powder.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bonga Grounded Fish</h5>
+            <p class="card-text">$00.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/Okazi.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Dried Okazi Leaves 50g</h5>
+            <p class="card-text">$120.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/Cameroonpepper.jpeg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cameroon pepper</h5>
+            <p class="card-text">$790.50</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/nutmeg1.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tiger Nutmeg Powder 100g</h5>
+            <p class="card-text">$120.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/Lemongrass.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Lemon grass</h5>
+            <p class="card-text">$99.50</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border icon-hover px-2 pt-2"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="img/alligatorpepper.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Alligator pepper</h5>
+            <p class="card-text">$120.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+              <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- Products -->
+
+<section class="py-5">
+  <div class="container my-5">
+      <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="seafood-tab" data-toggle="tab" data-target="#seafood" type="button" role="tab" aria-controls="seafood" aria-selected="true">Seafood/Fish</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="vegetables-tab" data-toggle="tab" data-target="#vegetables" type="button" role="tab" aria-controls="vegetables" aria-selected="false">Vegetables and Spices</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="grains-tab" data-toggle="tab" data-target="#grains" type="button" role="tab" aria-controls="grains" aria-selected="false">Grains and Flours</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="snacks-tab" data-toggle="tab" data-target="#snacks" type="button" role="tab" aria-controls="snacks" aria-selected="false">Snacks and Sweets</button>
+          </li>
+
+      </ul>
+      <div class="tab-content" id="myTabContent0">
+          <div class="tab-pane fade show active" id="seafood" role="tabpanel" aria-labelledby="seafood-tab">
+              <div id="product-list-seafood" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+          </div>
+          <div class="tab-pane fade" id="vegetables" role="tabpanel" aria-labelledby="vegetables-tab">
+              <div id="product-list-vegetables" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+          </div>
+          <div class="tab-pane fade" id="grains" role="tabpanel" aria-labelledby="grains-tab">
+              <div id="product-list-grains" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+          </div>
+          <div class="tab-pane fade" id="snacks" role="tabpanel" aria-labelledby="snacks-tab">
+              <div id="product-list-snacks" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+          </div>
+
+      </div>
+      <nav>
+          <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#" id="prev-page">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="next-page">Next</a></li>
+          </ul>
+      </nav>
+  </div>
+
+</section>
+
+<!-- Feature -->
+<section class="mt-5" style="background-color: #f5f5f5;" id="About">
+  <div class="container text-dark pt-3">
+    <header class="pt-4 pb-3">
+      <h3>Why choose us</h3>
+    </header>
+
+    <div class="row mb-4">
+      <div class="col-lg-4 col-md-6">
+        <figure class="d-flex align-items-center mb-4">
+          <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+            <i class="fas fa-camera-retro fa-2x fa-fw text-dark floating"></i>
+          </span>
+          <figcaption class="info">
+            <h6 class="title">Reasonable prices</h6>
+            <p>We offer competitive pricing on all our products, ensuring you get the best value for your money.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="d-flex align-items-center mb-4">
+          <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+            <i class="fas fa-star fa-2x fa-fw text-dark floating"></i>
+          </span>
+          <figcaption class="info">
+            <h6 class="title">Best quality</h6>
+            <p>Our products are sourced from top suppliers, ensuring the highest quality and freshness.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="d-flex align-items-center mb-4">
+          <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+            <i class="fas fa-bolt fa-2x fa-fw text-dark floating"></i>
+          </span><i class="fa-solid "></i>
+          <figcaption class="info">
+            <h6 class="title">Fast Delivery</h6>
+            <p>We offer fast and reliable shipping to customers within no time, so you can enjoy our products as soon as possible.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="d-flex align-items-center mb-4">
+          <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+            <i class="fas fa-users fa-2x fa-fw text-dark floating"></i>
+          </span>
+          <figcaption class="info">
+            <h6 class="title">Customer satisfaction</h6>
+            <p>Our customers are our top priority, and we strive to provide exceptional service and support.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="d-flex align-items-center mb-4">
+          <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+            <i class="fas fa-thumbs-up fa-2x fa-fw text-dark floating"></i>
+          </span>
+          <figcaption class="info">
+            <h6 class="title">Happy customers</h6>
+            <p>We have a growing base of satisfied customers who trust us for their grocery needs.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="d-flex align-items-center mb-4">
+          <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+            <i class="fas fa-box fa-2x fa-fw text-dark floating"></i>
+          </span>
+          <figcaption class="info">
+            <h6 class="title">Multiple items</h6>
+            <p>We offer a wide range of products, from everyday essentials to specialty items, to meet all your grocery needs.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature -->
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>
+        We're here to help! Reach out to us for any questions or support.
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <iframe
+      style="border: 0; width: 100%; height: 350px"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.20506178959!2d150.8063211759103!3d-33.729513173280125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129b0bf6a411cf%3A0x1c3d161f564e008c!2s518%20Luxford%20Rd%2C%20Shalvey%20NSW%202770%2C%20Australia!5e0!3m2!1sen!2sng!4v1720549748209!5m2!1sen!2sng"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>518 Luxford Road, New South Wales 2770, Australia</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>buy@adeola4organics.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+61432429154</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 mt-5 mt-lg-0">
+        <form
+          action="forms/contact.php"
+          method="post"
+          role="form"
+          class="php-email-form"
+        >
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="form-group mt-3">
+            <textarea
+              class="form-control"
+              name="message"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">
+              Your message has been sent. Thank you!
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+<!-- Blog -->
+<!-- <section class="mt-5 mb-4">
+  <div class="container text-dark">
+    <header class="mb-4">
+      <h3>Blog posts</h3>
+    </header>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <article>
+          <a href="#" class="img-fluid">
+            <img class="rounded w-100" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/1.webp" style="object-fit: cover;" height="160" />
+          </a>
+          <div class="mt-2 text-muted small d-block mb-1">
+            <span>
+              <i class="fa fa-calendar-alt fa-sm"></i>
+              23.12.2022
+            </span>
+            <a href="#"><h6 class="text-dark">How to promote brands</h6></a>
+            <p>When you enter into any new area of science, you almost reach</p>
+          </div>
+        </article>
+      </div> -->
+      <!-- col.// -->
+      <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <article>
+          <a href="#" class="img-fluid">
+            <img class="rounded w-100" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/2.webp" style="object-fit: cover;" height="160" />
+          </a>
+          <div class="mt-2 text-muted small d-block mb-1">
+            <span>
+              <i class="fa fa-calendar-alt fa-sm"></i>
+              13.12.2022
+            </span>
+            <a href="#"><h6 class="text-dark">How we handle shipping</h6></a>
+            <p>When you enter into any new area of science, you almost reach</p>
+          </div>
+        </article>
+      </div> -->
+      <!-- col.// -->
+      <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <article>
+          <a href="#" class="img-fluid">
+            <img class="rounded w-100" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/3.webp" style="object-fit: cover;" height="160" />
+          </a>
+          <div class="mt-2 text-muted small d-block mb-1">
+            <span>
+              <i class="fa fa-calendar-alt fa-sm"></i>
+              25.11.2022
+            </span>
+            <a href="#"><h6 class="text-dark">How to promote brands</h6></a>
+            <p>When you enter into any new area of science, you almost reach</p>
+          </div>
+        </article>
+      </div> -->
+      <!-- col.// -->
+      <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <article>
+          <a href="#" class="img-fluid">
+            <img class="rounded w-100" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/4.webp" style="object-fit: cover;" height="160" />
+          </a>
+          <div class="mt-2 text-muted small d-block mb-1">
+            <span>
+              <i class="fa fa-calendar-alt fa-sm"></i>
+              03.09.2022
+            </span>
+            <a href="#"><h6 class="text-dark">Success story of sellers</h6></a>
+            <p>When you enter into any new area of science, you almost reach</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- Blog -->
+
+<footer id="dk-footer" class="dk-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 col-lg-4">
+              <div class="dk-footer-box-info">
+                  <a href="index.html" class="footer-logo">
+                      <img src="img/logo.png" alt="footer_logo" class="img-fluid">
+                  </a>
+                  <p class="footer-info-text">
+                      AD-OLA is your go-to source for quality groceries, offering a wide range of products at competitive prices.
+                  </p>
+                  <div class="footer-social-link">
+                      <h3>Follow us</h3>
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-google-plus"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-linkedin"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-instagram"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- End Social link -->
+              </div>
+              <!-- End Footer info -->
+      
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="contact-us">
+                          <div class="contact-icon">
+                              <i class="fa fa-map-o" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info gg">
+                              <h3>518 Luxford Road, </h3>
+                              <p style="color: #423f3f;">New South Wales 2770, Australia</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+                  <div class="col-md-6">
+                      <div class="contact-us contact-us-last">
+                          <div class="contact-icon">
+                              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info gg">
+                              <h3>+61432429154</h3>
+                              <p style="color: #423f3f;">Give us a call</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Contact Row -->
+              <div class="row">
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget footer-left-widget">
+                          <div class="section-heading">
+                              <h3>Useful Links</h3>
+                              <span class="animate-border border-black"></span>
+                          </div>
+                          <ul>
+                              <li>
+                                  <a href="#">About us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Services</a>
+                              </li>
+                              <li>
+                                  <a href="#">Projects</a>
+                              </li>
+                              <li>
+                                  <a href="#">Our Team</a>
+                              </li>
+                          </ul>
+                          <ul>
+                              <li>
+                                  <a href="#">Contact us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Blog</a>
+                              </li>
+                              <li>
+                                  <a href="#">Testimonials</a>
+                              </li>
+                              <li>
+                                  <a href="#">Faq</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- End Footer Widget -->
+                  </div>
+                  <!-- End col -->
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget">
+                          <div class="section-heading">
+                              <h3>Subscribe</h3>
+                              <span class="animate-border border-black"></span>
+                          </div>
+                          <p class="gg" style="color: #423f3f; "><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                          Subscribe to get upddated on our new products</p>
+                          <form action="#">
+                              <div class="form-row">
+                                  <div class="col dk-footer-form">
+                                      <input type="email" class="form-control" placeholder="Email Address">
+                                      <!-- <button type="submit">
+                                          <i class="fa fa-send"></i>
+                                      </button> -->
+                                  </div>
+                              </div>
+                          </form>
+                          <!-- End form -->
+                      </div>
+                      <!-- End footer widget -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Row -->
+          </div>
+          <!-- End Col -->
+      </div>
+      <!-- End Widget Row -->
+  </div>
+  <!-- End Contact Container -->
+
+
+  <div class="copyright">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <span>Copyright © 2024, All Right Reserved <AD-OLA></AD-OLA></span>
+              </div>
+              <!-- End Col -->
+              <div class="col-md-6">
+                  <div class="copyright-menu">
+                      <ul>
+                          <li>
+                              <a href="#">Home</a>
+                          </li>
+                          <li>
+                              <a href="#">Terms</a>
+                          </li>
+                          <li>
+                              <a href="#">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- End col -->
+          </div>
+          <!-- End Row -->
+      </div>
+      <!-- End Copyright Container -->
+  </div>
+  <!-- End Copyright -->
+  <!-- Back to top -->
+  <div id="back-to-top" class="back-to-top">
+    <a href="#header"><button class="btn btn-dark" title="Back to Top" style="display: block;">
+          <i class="fa fa-angle-up"></i>
+      </button></a>
+      
+  </div>
+  <!-- End Back to top -->
+</footer>
+<!-- Footer -->
+<!-- Footer -->
+    <!-- MDB -->
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splide/4.0.7/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

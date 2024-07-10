@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad-ola</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="shortcut icon" href="img/store-solid (1).svg" type="image/x-icon">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/footer.css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="Index.html"><img src="img/logo.png" height="35" /></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">All products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <!-- <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container my-5">
+            <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="seafood-tab" data-toggle="tab" data-target="#seafood" type="button" role="tab" aria-controls="seafood" aria-selected="true">Seafood/Fish</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="vegetables-tab" data-toggle="tab" data-target="#vegetables" type="button" role="tab" aria-controls="vegetables" aria-selected="false">Vegetables and Spices</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="grains-tab" data-toggle="tab" data-target="#grains" type="button" role="tab" aria-controls="grains" aria-selected="false">Grains and Flours</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="snacks-tab" data-toggle="tab" data-target="#snacks" type="button" role="tab" aria-controls="snacks" aria-selected="false">Snacks and Sweets</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="dairy-tab" data-toggle="tab" data-target="#dairy" type="button" role="tab" aria-controls="dairy" aria-selected="false">Dairy and tomato products</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="instantfoods-tab" data-toggle="tab" data-target="#instantfoods" type="button" role="tab" aria-controls="instantfoods" aria-selected="false">Instant foods and condiments</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="beverages-tab" data-toggle="tab" data-target="#beverages" type="button" role="tab" aria-controls="beverages" aria-selected="false">beverages</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="oilsButters-tab" data-toggle="tab" data-target="#oilsButters" type="button" role="tab" aria-controls="oilsButters" aria-selected="false">Oils and butter</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="hairProducts-tab" data-toggle="tab" data-target="#hairProducts" type="button" role="tab" aria-controls="hairProducts" aria-selected="false">Hair Products</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent0">
+                <div class="tab-pane fade show active" id="seafood" role="tabpanel" aria-labelledby="seafood-tab">
+                    <div id="product-list-seafood" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="vegetables" role="tabpanel" aria-labelledby="vegetables-tab">
+                    <div id="product-list-vegetables" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="grains" role="tabpanel" aria-labelledby="grains-tab">
+                    <div id="product-list-grains" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="snacks" role="tabpanel" aria-labelledby="snacks-tab">
+                    <div id="product-list-snacks" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="dairy" role="tabpanel" aria-labelledby="dairy-tab">
+                    <div id="product-list-dairy" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="instantfoods" role="tabpanel" aria-labelledby="instantfoods-tab">
+                    <div id="product-list-instantfoods" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
+                    <div id="product-list-beverages" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="oilsButters" role="tabpanel" aria-labelledby="oilsButters-tab">
+                    <div id="product-list-oilsButters" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="hairProducts" role="tabpanel" aria-labelledby="hairProducts-tab">
+                    <div id="product-list-hairProducts" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+                </div>
+            </div>
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#" id="prev-page">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#" id="next-page">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <footer id="dk-footer" class="dk-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="dk-footer-box-info">
+                            <a href="index.html" class="footer-logo">
+                                <img src="img/logo.png" alt="footer_logo" class="img-fluid">
+                            </a>
+                            <p class="footer-info-text">
+                                AD-OLA is your go-to source for quality groceries, offering a wide range of products at competitive prices.
+                            </p>
+                            <div class="footer-social-link">
+                                <h3>Follow us</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Social link -->
+                        </div>
+                        <!-- End Footer info -->
+                
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-us">
+                                    <div class="contact-icon gg">
+                                        <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info gg">
+                                        <h3>518 Luxford Road, </h3>
+                                        <p class="gg" style="color: #423f3f;">New South Wales 2770, Australia</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6">
+                                <div class="contact-us contact-us-last">
+                                    <div class="contact-icon gg">
+                                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info gg">
+                                        <h3>+61432429154</h3>
+                                        <p class="gg" style="color: #423f3f;">Give us a call</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Contact Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget footer-left-widget">
+                                    <div class="section-heading">
+                                        <h3>Useful Links</h3>
+                                        <span class="animate-border border-black"></span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Our Team</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Faq</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Footer Widget -->
+                            </div>
+                            <!-- End col -->
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget">
+                                    <div class="section-heading">
+                                        <h3>Subscribe</h3>
+                                        <span class="animate-border border-black"></span>
+                                    </div>
+                                    <p class="gg" style="color: #423f3f;"><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                    Subscribe to get upddated on our new products</p>
+                                    <form action="#">
+                                        <div class="form-row">
+                                            <div class="col dk-footer-form">
+                                                <input type="email" class="form-control" placeholder="Email Address">
+                                                <!-- <button type="submit">
+                                                    <i class="fa fa-send"></i>
+                                                </button> -->
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- End form -->
+                                </div>
+                                <!-- End footer widget -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Widget Row -->
+            </div>
+            <!-- End Contact Container -->
+    
+    
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Copyright © 2024, All Right Reserved AD-OLA</span>
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="copyright-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Copyright Container -->
+            </div>
+            <!-- End Copyright -->
+            <!-- Back to top -->
+            <div id="back-to-top" class="back-to-top">
+                <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                    <i class="fa fa-angle-up"></i>
+                </button>
+            </div>
+            <!-- End Back to top -->
+    </footer>
+    </section>
+
+    <!-- Then load Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
