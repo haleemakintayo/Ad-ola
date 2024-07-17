@@ -3,8 +3,10 @@
 const products = {
   seafood: [
     { name: 'Bonga Fish', price: '$22 for 5oz', image: 'img/bongafish.jpeg' },
-    { name: 'Roasted Crayfish', price: '$00.00', image: 'img/crayfish.jpg', sale: true, originalPrice: '$20.00' },
-    { name: 'Bonga Grounded fish', price: '$00.00', image: 'img/bonga powder.jpg', sale: true, originalPrice: '$50.00' },
+    // { name: 'Roasted Crayfish', price: '$00.00', image: 'img/crayfish.jpg', sale: true, originalPrice: '$20.00' },
+    { name: 'Bonga Grounded fish', price: '$7/100g', image: 'img/bonga powder.jpg', sale: true, originalPrice: '$50.00' },
+    { name: 'Crayfish whole', price: '$7/100g', image: 'img/crayfish.jpg' },
+    { name: 'Grounded Crayfish', price: '$7/100g', image: 'img/groundedcrayfish.png' },
   ],
   vegetables: [
     { name: 'Dried Okazi leaves 50g', price: '$00.00', image: 'img/Okazi.jpg' },
@@ -18,9 +20,13 @@ const products = {
     { name: 'Ayoola Foods Pounded yam', price: ' 0.9 kg - $18.00', image: 'img/Ayoola Foods Pounded Yam .jpg', sale: true, originalPrice: '$19.00' },
     { name: 'Ayoola Foods Beans Flour 0.9kg', price: '$00.00', image: 'img/Ayoola Beans Flour.jpeg', popular: true },
     { name: 'Praise Tom Brown 500g', price: '$00.00', image: 'img/Praise Tom Brown .jpg', popular: true },
-    { name: 'Golden Morn', price: '$00.00', image: 'img/Golden Morn.jpg', popular: true },
-    { name: 'Honey Well Semolita', price: '$00.00', image: 'img/Honey Well Semolina.jpg', popular: true },
-    { name: 'Gari Ijebu (bag)', price: '$12000 Naira', image: 'img/Gari Ijebu (bag).jpg' },
+    { name: 'Golden Morn(950g x 6)', price: '$78', image: 'img/Golden Morn.jpg', popular: true },
+    { name: 'Honey Well Semolina', price: '$00.00', image: 'img/Honey Well Semolina.jpg', popular: true },
+    { name: 'Gari Ijebu ', price: '$6.50/kg', image: 'img/Gari Ijebu (bag).jpg' },
+    { name: 'Amala Isu', price: '$100/10kg', image: 'img/Elubo isu.png' },
+    { name: 'Amala Lafun', price: 'nil', image: 'img/Elubo lafun.png' },
+    { name: 'Ola Ola Pounded Yam', price: '$180/Carton', image: 'img/Ola Ola poundo.png' },
+    { name: 'Oloyin Beans', price: '$13/kg', image: 'img/Oloyin beans .png' },
   ],
   snacks: [
     { name: 'Spicy kulikuli', price: '$00.00', image: 'img/Spicy Kulikuli.png' },
@@ -32,7 +38,7 @@ const products = {
   ],
   dairy: [
     { name: 'Nido Fortified Milk Powder 400g', price: '$10.00', image: 'img/Nido.jpeg' },
-    { name: 'Derica Tomato Paste 850g', price: '$00.00', image: 'img/Derica Tomato Paste .jpg' },
+    { name: 'Derica Tomato Paste 850g', price: '$100 per carton', image: 'img/Derica Tomato Paste .jpg' },
     { name: 'Gino Tomato Paste 210g', price: '$00.00', image: 'img/Gino Tomato Paste 210g.jpg' },
     { name: 'Maggi Arome', price: '$00.00', image: 'img/Maggi-Arome.jpg' },
   ],
@@ -48,6 +54,19 @@ const products = {
     { name: 'Original Ador Ogbono', price: '$00.00', image: 'img/Original Ador Ogbono.png' },
     { name: 'Ogbono Grounded', price: '$00.00', image: 'img/ground-ogbono.png' },
     { name: 'Ogbono Whole', price: '$00.00', image: 'img/Original Ador Ogbono.png' },
+    { name: 'Palm oil', price: '$12/L', image: 'img/Palm oil.png' },
+    { name: 'Egusi whole & Grounded', price: '$8/250g', image: 'img/Egusi whole & Grounded.png' },
+    // { name: 'Ogbono', price: 'nil', image: 'img/ogbono.jpg' },
+    { name: 'Knorr beef', price: '$130/carton', image: 'img/Knorr beef.png' },
+    { name: 'Knorr chicken', price: 'nil', image: 'img/Knorr Chicken.png' },
+    { name: 'Maggi star', price: '$200/carton @24 packets', image: 'img/Maggi star.png' },
+    { name: 'Grandiose pap white, yellow, brown', price: '$120/carton', image: 'img/Grandiose pap.png' },
+    // { name: 'Derica 850g', price: '$100/carton', image: 'img/derica.jpg' },
+    { name: 'Spicity fried rice, joloff rice', price: '$70/Carton', image: 'img/Spicity fried rice.png' },
+    // { name: 'Aguilera', price: '$78/carton', image: 'img/aguilera.jpg' },
+    { name: 'Pepper soup spice', price: '$50/carton', image: 'img/Pepper-Soup-Spices-IG-traditiona.png' },
+    { name: 'Suya spice', price: 'nil', image: 'img/Hakkan Foods Sweet Potato Chips Suya Pepper .jpg' },
+    { name: 'Grounded Chili (ata gungun)', price: 'nil', image: 'img/Grounded Chili (ata gungun).png' },
   ],
   beverages: [
     { name: 'Malta Guinness Non-Alcoholic Drink', price: '$00.00', image: 'img/Malta Guinness Non-Alcoholic Drink.png' },
@@ -139,31 +158,34 @@ let currentCategory = 'seafood';
 function renderProducts(category, page = 1) {
   currentCategory = category;
   const productList = document.getElementById(`product-list-${category}`);
+  document.querySelectorAll('.product-list').forEach(list => list.style.display = 'none');
+  productList.style.display = 'block';
   productList.innerHTML = '';
+  
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const paginatedProducts = products[category].slice(startIndex, endIndex);
-  
+
   paginatedProducts.forEach(product => {
-      const productCard = `
-          <div class="col mb-5">
-              <div class="card h-100">
-                  ${product.sale ? '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>' : ''}
-                  <img class="card-img-top" src="${product.image}" alt="${product.name}" />
-                  <div class="card-body p-4">
-                      <div class="text-center">
-                          <h5 class="fw-bolder">${product.name}</h5>
-                          ${product.popular ? '<div class="d-flex justify-content-center small text-warning mb-2"><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div></div>' : ''}
-                          ${product.sale ? `<span class="text-muted text-decoration-line-through">${product.originalPrice}</span> ${product.price}` : product.price}
-                      </div>
-                  </div>
-                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">${product.sale ? 'Add to cart' : 'View options'}</a></div>
-                  </div>
-              </div>
+    const productCard = `
+      <div class="col mb-5">
+        <div class="card h-100">
+          ${product.sale ? '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>' : ''}
+          <img class="card-img-top" src="${product.image}" alt="${product.name}" />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">${product.name}</h5>
+              ${product.popular ? '<div class="d-flex justify-content-center small text-warning mb-2"><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div></div>' : ''}
+              ${product.sale ? `<span class="text-muted text-decoration-line-through">${product.originalPrice}</span> ${product.price}` : product.price}
+            </div>
           </div>
-      `;
-      productList.insertAdjacentHTML('beforeend', productCard);
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">${product.sale ? 'Add to cart' : 'View options'}</a></div>
+          </div>
+        </div>
+      </div>
+    `;
+    productList.insertAdjacentHTML('beforeend', productCard);
   });
   updatePagination(category, page);
 }
@@ -177,15 +199,15 @@ function updatePagination(category, page) {
 
 document.querySelectorAll('.nav-link').forEach(tab => {
   tab.addEventListener('click', (event) => {
-      const category = event.target.dataset.target.replace('#', '');
-      renderProducts(category, 1);
+    const category = event.target.dataset.target.replace('#', '');
+    renderProducts(category, 1);
   });
 });
 
 document.getElementById('prev-page').addEventListener('click', (event) => {
   event.preventDefault();
   if (currentPage > 1) {
-      renderProducts(currentCategory, currentPage - 1);
+    renderProducts(currentCategory, currentPage - 1);
   }
 });
 
@@ -193,11 +215,54 @@ document.getElementById('next-page').addEventListener('click', (event) => {
   event.preventDefault();
   const totalPages = Math.ceil(products[currentCategory].length / itemsPerPage);
   if (currentPage < totalPages) {
-      renderProducts(currentCategory, currentPage + 1);
+    renderProducts(currentCategory, currentPage + 1);
   }
 });
 
 // Initial render for the first category
 renderProducts('seafood');
 
+// Function to search for products based on user input
+// function searchProducts(query) {
+//   const searchResultsContainer = document.getElementById('search-results');
+//   searchResultsContainer.innerHTML = '';
 
+//   if (query.length > 0) {
+//     Object.keys(products).forEach(category => {
+//       products[category].forEach(product => {
+//         if (product.name.toLowerCase().includes(query.toLowerCase())) {
+//           const productDiv = document.createElement('div');
+//           productDiv.classList.add('col mb-5');
+
+//           const productCard = `
+//             <div class="card h-100">
+//               ${product.sale ? '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>' : ''}
+//               <img class="card-img-top" src="${product.image}" alt="${product.name}" />
+//               <div class="card-body p-4">
+//                 <div class="text-center">
+//                   <h5 class="fw-bolder">${product.name}</h5>
+//                   ${product.popular ? '<div class="d-flex justify-content-center small text-warning mb-2"><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div></div>' : ''}
+//                   ${product.sale ? `<span class="text-muted text-decoration-line-through">${product.originalPrice}</span> ${product.price}` : product.price}
+//                 </div>
+//               </div>
+//               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+//                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">${product.sale ? 'Add to cart' : 'View options'}</a></div>
+//               </div>
+//             </div>
+//           `;
+//           productDiv.insertAdjacentHTML('beforeend', productCard);
+
+//           searchResultsContainer.appendChild(productDiv);
+//         }
+//       });
+//     });
+//   } else {
+//     searchResultsContainer.innerHTML = '';
+//   }
+// }
+
+// // Event listener for the search input
+// document.getElementById('search-input').addEventListener('input', function (event) {
+//   const query = event.target.value;
+//   searchProducts(query);
+// });
