@@ -158,10 +158,7 @@ let currentCategory = 'seafood';
 function renderProducts(category, page = 1) {
   currentCategory = category;
   const productList = document.getElementById(`product-list-${category}`);
-  document.querySelectorAll('.product-list').forEach(list => list.style.display = 'none');
-  productList.style.display = 'block';
   productList.innerHTML = '';
-  
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const paginatedProducts = products[category].slice(startIndex, endIndex);
