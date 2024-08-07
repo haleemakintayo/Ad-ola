@@ -31,8 +31,12 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="Index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="products.html">All products</a></li>
+                   
+
+
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <a class="nav-link active dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#!">All Products</a></li>
                             <!-- <li><hr class="dropdown-divider" /></li>
@@ -41,36 +45,24 @@
                         </ul>
                     </li>
                 </ul>
-                <!-- <form class="d-flex"> -->
-                    <!-- <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search For a product" id="search-input">
-                        <div class="input-group-append">
-                          <button class="btn btn-secondary" type="button">
-                            <i class="fa fa-search"></i>
-                          </button>
-                        </div>
-                      </div>
-                      <div id="search-results"></div>
-                        <div id="products-container">
-                        <div id="product-list-seafood" class="product-list"></div>
-                        <div id="product-list-vegetables" class="product-list" style="display: none;"></div>
-                        <div id="product-list-grains" class="product-list" style="display: none;"></div>
-                        <div id="product-list-snacks" class="product-list" style="display: none;"></div>
-                        <div id="product-list-dairy" class="product-list" style="display: none;"></div>
-                        <div id="product-list-instantfoods" class="product-list" style="display: none;"></div>
-                        <div id="product-list-beverages" class="product-list" style="display: none;"></div>
-                        <div id="product-list-oilsButters" class="product-list" style="display: none;"></div>
-                        <div id="product-list-hairProducts" class="product-list" style="display: none;"></div>
-                        </div> -->
-                    <!-- <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
-                </form> -->
+
             </div>
         </div>
     </nav>
+                        <div class="container my-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="search-input" placeholder="Search products...">
+                                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                                </div>
+                                <div class="dropdown mt-2" id="search-dropdown">
+                                    <ul class="dropdown-menu" aria-labelledby="search-input" id="search-results"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="searchResults" class="tab-content"></div>
     <section class="py-5">
         <div class="container my-5">
             <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
@@ -138,6 +130,12 @@
                 </ul>
             </nav>
         </div>
+
+ 
+
+        <section id="searchResults" class="tab-pane">
+           
+        </section>
         
         <footer id="dk-footer" class="dk-footer">
             <div class="container">

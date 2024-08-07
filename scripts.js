@@ -219,7 +219,83 @@ document.getElementById('next-page').addEventListener('click', (event) => {
 // Initial render for the first category
 renderProducts('seafood');
 
-// Function to search for products based on user input
+
+
+
+function searchProducts(query) {
+  const searchResultsContainer = document.getElementById('search-results');
+  searchResultsContainer.innerHTML = '';
+
+  Object.keys(products).forEach(category => {
+      products[category].forEach(product => {
+          if (product.name.toLowerCase().includes(query.toLowerCase())) {
+              const productItem = document.createElement('li');
+              productItem.classList.add('dropdown-item');
+              
+              const productDiv = document.createElement('div');
+              productDiv.classList.add('d-flex', 'align-items-center');
+
+              const productImage = document.createElement('img');
+              productImage.src = product.image;
+              productImage.alt = product.name;
+              productImage.classList.add('me-3');
+              productImage.style.width = '50px';
+
+              const productDetails = document.createElement('div');
+              
+              const productName = document.createElement('h6');
+              productName.textContent = product.name;
+
+              const productPrice = document.createElement('p');
+              productPrice.classList.add('mb-0');
+              productPrice.textContent = product.price;
+
+              productDetails.appendChild(productName);
+              productDetails.appendChild(productPrice);
+
+              if (product.sale) {
+                  const productOriginalPrice = document.createElement('p');
+                  productOriginalPrice.textContent = product.originalPrice;
+                  productOriginalPrice.classList.add('original-price', 'mb-0');
+                  productDetails.appendChild(productOriginalPrice);
+              }
+
+              if (product.popular) {
+                  const popularTag = document.createElement('p');
+                  popularTag.textContent = 'Popular';
+                  popularTag.classList.add('popular-tag', 'mb-0');
+                  productDetails.appendChild(popularTag);
+              }
+
+              productDiv.appendChild(productImage);
+              productDiv.appendChild(productDetails);
+
+              productItem.appendChild(productDiv);
+              searchResultsContainer.appendChild(productItem);
+          }
+      });
+  });
+
+  if (query.length > 0) {
+      document.getElementById('search-dropdown').classList.add('show');
+      searchResultsContainer.classList.add('show');
+  } else {
+      document.getElementById('search-dropdown').classList.remove('show');
+      searchResultsContainer.classList.remove('show');
+  }
+}
+
+document.getElementById('search-input').addEventListener('input', function (event) {
+  const query = event.target.value;
+  searchProducts(query);
+});
+
+document.addEventListener('click', function (event) {
+  if (!document.getElementById('search-dropdown').contains(event.target)) {
+      document.getElementById('search-dropdown').classList.remove('show');
+      document.getElementById('search-results').classList.remove('show');
+  }
+});
 // function searchProducts(query) {
 //   const searchResultsContainer = document.getElementById('search-results');
 //   searchResultsContainer.innerHTML = '';
