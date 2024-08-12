@@ -165,23 +165,25 @@ function renderProducts(category, page = 1) {
 
   paginatedProducts.forEach(product => {
     const productCard = `
-      <div class="col mb-5">
-        <div class="card h-100">
-          ${product.sale ? '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>' : ''}
-          <img class="card-img-top" src="${product.image}" alt="${product.name}" />
-          <div class="card-body p-4">
-            <div class="text-center">
-              <h5 class="fw-bolder">${product.name}</h5>
-              ${product.popular ? '<div class="d-flex justify-content-center small text-warning mb-2"><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div></div>' : ''}
-              ${product.sale ? `<span class="text-muted text-decoration-line-through">${product.originalPrice}</span> ${product.price}` : product.price}
-            </div>
+    <div class="col mb-5">
+      <div class="card h-100">
+        ${product.sale ? '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>' : ''}
+        <img class="card-img-top" src="${product.image}" alt="${product.name}" />
+        <div class="card-body p-4">
+          <div class="text-center">
+            <h5 class="fw-bolder">${product.name}</h5>
+            ${product.popular ? '<div class="d-flex justify-content-center small text-warning mb-2"><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div></div>' : ''}
+            ${product.sale ? `<span class="text-muted text-decoration-line-through">${product.originalPrice}</span> ${product.price}` : product.price}
           </div>
-          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">${product.sale ? 'Add to cart' : 'View options'}</a></div>
+        </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <button class="btn btn-outline-dark mt-auto buy-now-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Buy Now</button>
           </div>
         </div>
       </div>
-    `;
+    </div>
+  `;
     productList.insertAdjacentHTML('beforeend', productCard);
   });
   updatePagination(category, page);
