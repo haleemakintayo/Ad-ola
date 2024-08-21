@@ -75,30 +75,7 @@ const products = {
     
   ],
   oilsButters: [
-    { name: 'Carotone Oil Body Oil 65ml', price: '$10.00', image: 'img/Carotone Oil Body Oil 65ml.png' },
-    { name: 'Caro White Body Lotion 500ml', price: '$15.00', image: 'img/Caro White Body Lotion.png' },
-    { name: 'Cantu Hydrating Body Wash 13.5 fl oz', price: '$25.00', image: 'img/Cantu Hydrating Body Wash .jpg' },
-    { name: 'Queen Elizabeth Cocoa Butter Hand & Body Lotion', price: '$10.00', image: 'img/Queen Elizabeth Cocoa Butter Hand & Body Lotion.jpg' },
-    { name: 'Carotone Brightening Body Cream 330ml', price: '$15.00', image: 'img/Carotone Brightening Body Cream 330m.png' },
-    { name: 'Ever Sheen Cocoa Butter Cream 250ml', price: '$15.00', image: 'img/Ever Sheen Cocoa Butter Cream 250ml.png' },
-    { name: 'Skin Light Body Cream Jar (500ml)', price: '$15.00', image: 'img/Skin Light Body Cream Jar (500ml).png' },
-    { name: 'Princess Cocoa Paa! Cocoa Butter Hand & Body Cream', price: '$15.00', image: 'img/Princess Cocoa Paa! Cocoa Butter Hand & Body Cream.png' },
-    { name: 'Jamaican Mango & Lime Black Castor Oil 4oz', price: '$15.00', image: 'img/Jamaican Mango & Lime Black Castor Oil Argan.jpg' },
-    { name: 'ORS Coconut Oil 227g', price: '$10.00', image: 'img/ORS Coconut Oil 227g .jpeg' },
-    { name: 'ORS Olive Oil Creme Hair Dress 227g', price: '$10.00', image: 'img/ORS Olive Oil Creme Hair Dress 227g.png' },
-    { name: 'Kuza Hair Food With Vitamins A & E 226g', price: '$10.00', image: 'img/Kuza Hair Food With Vitamins A & E 226g.png' },
-    { name: 'Organic Root Stimulator Olive Oil Replenishing Conditioner', price: '$10.00', image: 'img/Organic Root Stimulator Olive Oil Replenishing Conditioner.jpg' },
-    { name: 'Clinic Clear Body Lotion 500ml', price: '$20.00', image: 'img/Clinic Clear Body Lotion 500ml.png' },
-    { name: 'Fair and White Exclusive Whitenizer Body Lotion', price: '$35.00', image: 'img/Fair and White Exclusive Whitenizer Body Lotion.png' },
-    { name: 'Fair and White Gold 2 Revitalizing Body Lotion', price: '$35.00', image: 'img/Fair and White Gold 2 Revitalizing Body Lotio.png' },
-    { name: 'Blue Magic Cholesterol Conditioning Rinse', price: '$10.00', image: 'img/Blue Magic Cholesterol Conditioning Rinse.png' },
-    { name: 'Blue Magic Argan Oil Mango & Lime Leave-In Conditioner', price: '$10.00', image: 'img/Blue Magic Argan Oil Mango & Lime Leave-In Conditioner.png' },
-    { name: 'Blue Magic Carrot Oil Leave-In Styling Conditioner', price: '$10.00', image: 'img/Blue Magic Carrot Oil Leave-In Styling Conditioner.png' },
-    { name: 'Blue Magic Conditioner Hair Dress', price: '$10.00', image: 'img/Blue Magic Conditioner Hair Dress.png' },
-    { name: 'Blue Magic Coconut Oil', price: '$10.00', image: 'img/Blue Magic Coconut Oil.jpg' },
-    { name: 'Blue Magic Bergamot Hair & Scalp Conditioner', price: '$10.00', image: 'img/Blue Magic Bergamot Hair & Scalp Conditioner.png' },
-    { name: 'African Pride Shea Butter Miracle', price: '$10.00', image: 'img/African Pride Shea Butter Miracle.png' },
-    { name: 'S-Curl No-Drip Activator Moisturizer 236ml (8 fl oz)', price: '$12.00', image: 'img/S-Curl No-Drip Activator Moisturizer 236ml (8 fl oz).png' },
+    
   ],
   nutsSeeds: [
     
@@ -133,6 +110,41 @@ const products = {
     { name: 'Blue Magic Bergamot Hair & Scalp Conditioner', price: '$10.00', image: 'img/Blue Magic Bergamot Hair & Scalp Conditioner.png' },
     { name: 'African Pride Shea Butter Miracle', price: '$10.00', image: 'img/African Pride Shea Butter Miracle.png' },
     { name: 'S-Curl No-Drip Activator Moisturizer 236ml (8 fl oz)', price: '$12.00', image: 'img/S-Curl No-Drip Activator Moisturizer 236ml (8 fl oz).png' },
+
+    { name: 'Carotone brightening oil', price: '$17.00', image: 'img/Carotone Oil Body Oil 65ml.png' },
+    { name: 'Caro White Body Lotion 500ml', price: '$15.00', image: 'img/Caro White Body Lotion.png' },
+    { name: 'Cantu Hydrating Body Wash 13.5 fl oz', price: '$25.00', image: 'img/Cantu Hydrating Body Wash .jpg' },
+    { name: 'Queen Elizabeth Cocoa Butter Hand & Body Lotion', price: '$10.00', image: 'img/Queen Elizabeth Cocoa Butter Hand & Body Lotion.jpg' },
+    { name: 'Carotone Brightening Body Cream 330ml', price: '$15.00', image: 'img/Carotone Brightening Body Cream 330m.png' },
+    { name: 'Ever Sheen Cocoa Butter Cream 250ml', price: '$15.00', image: 'img/Ever Sheen Cocoa Butter Cream 250ml.png' },
+    { name: 'Skin Light Body Cream Jar (500ml)', price: '$15.00', image: 'img/Skin Light Body Cream Jar (500ml).png' },
+    { name: 'Princess Cocoa Paa! Cocoa Butter Hand & Body Cream', price: '$15.00', image: 'img/Princess Cocoa Paa! Cocoa Butter Hand & Body Cream.png' },
+    { name: 'Jamaican Mango & Lime Black Castor Oil 4oz', price: '$15.00', image: 'img/Jamaican Mango & Lime Black Castor Oil Argan.jpg' },
+    { name: 'ORS Coconut Oil 227g', price: '$10.00', image: 'img/ORS Coconut Oil 227g .jpeg' },
+    { name: 'ORS Olive Oil Creme Hair Dress 227g', price: '$10.00', image: 'img/ORS Olive Oil Creme Hair Dress 227g.png' },
+    { name: 'Kuza Hair Food With Vitamins A & E 226g', price: '$10.00', image: 'img/Kuza Hair Food With Vitamins A & E 226g.png' },
+    { name: 'Organic Root Stimulator Olive Oil Replenishing Conditioner', price: '$10.00', image: 'img/Organic Root Stimulator Olive Oil Replenishing Conditioner.jpg' },
+    { name: 'Clinic Clear Body Lotion 500ml', price: '$20.00', image: 'img/Clinic Clear Body Lotion 500ml.png' },
+    { name: 'Fair and White Exclusive Whitenizer Body Lotion', price: '$35.00', image: 'img/Fair and White Exclusive Whitenizer Body Lotion.png' },
+    { name: 'Fair and White Gold 2 Revitalizing Body Lotion', price: '$35.00', image: 'img/Fair and White Gold 2 Revitalizing Body Lotio.png' },
+    { name: 'Blue Magic Cholesterol Conditioning Rinse', price: '$10.00', image: 'img/Blue Magic Cholesterol Conditioning Rinse.png' },
+    { name: 'Blue Magic Argan Oil Mango & Lime Leave-In Conditioner', price: '$10.00', image: 'img/Blue Magic Argan Oil Mango & Lime Leave-In Conditioner.png' },
+    { name: 'Blue Magic Carrot Oil Leave-In Styling Conditioner', price: '$10.00', image: 'img/Blue Magic Carrot Oil Leave-In Styling Conditioner.png' },
+    { name: 'Blue Magic Conditioner Hair Dress', price: '$10.00', image: 'img/Blue Magic Conditioner Hair Dress.png' },
+    { name: 'Blue Magic Coconut Oil', price: '$10.00', image: 'img/Blue Magic Coconut Oil.jpg' },
+    { name: 'Blue Magic Bergamot Hair & Scalp Conditioner', price: '$10.00', image: 'img/Blue Magic Bergamot Hair & Scalp Conditioner.png' },
+    { name: 'African Pride Shea Butter Miracle', price: '$10.00', image: 'img/African Pride Shea Butter Miracle.png' },
+    { name: 'S-Curl No-Drip Activator Moisturizer 236ml (8 fl oz)', price: '$12.00', image: 'img/S-Curl No-Drip Activator Moisturizer 236ml (8 fl oz).png' },
+    { name: 'Carotone 550ml',price:'$20.00', image:'img/Carotone 550ml.png'},
+    { name: 'Carotone 250ml',price:'$11.00', image:'img/Carotone 550ml.png'},
+    { name: 'Carotone Soap',price:'$13.00', image:'img/Carotone Soap.png'},
+    { name: 'Carotone  Cream Cup',price:'$22.00', image:'img/carotone cream cup.png'},
+    { name: 'Carotone Black spot corrector',price:'$7.00', image:'img/Carotone Black spot corrector.png'},
+    { name: 'Fair and White Brightening soap',price:'$10.00', image:'img/Fair and white soap.png'},
+    { name: 'Generic Caro white ',price:'$30.00', image:'img/Generic Carowhite 250ml.png'},
+    { name: 'Carowhite soap ',price:'$12.00', image:'img/Carowhite soap .png'},
+    { name: 'Mega growth for hair',price:'$15.00', image:'img/Mega growth for hair.png'}
+
   ],
 };
 
@@ -298,46 +310,3 @@ document.addEventListener('click', function (event) {
       document.getElementById('search-results').classList.remove('show');
   }
 });
-// function searchProducts(query) {
-//   const searchResultsContainer = document.getElementById('search-results');
-//   searchResultsContainer.innerHTML = '';
-
-//   if (query.length > 0) {
-//     Object.keys(products).forEach(category => {
-//       products[category].forEach(product => {
-//         if (product.name.toLowerCase().includes(query.toLowerCase())) {
-//           const productDiv = document.createElement('div');
-//           productDiv.classList.add('col mb-5');
-
-//           const productCard = `
-//             <div class="card h-100">
-//               ${product.sale ? '<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>' : ''}
-//               <img class="card-img-top" src="${product.image}" alt="${product.name}" />
-//               <div class="card-body p-4">
-//                 <div class="text-center">
-//                   <h5 class="fw-bolder">${product.name}</h5>
-//                   ${product.popular ? '<div class="d-flex justify-content-center small text-warning mb-2"><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div></div>' : ''}
-//                   ${product.sale ? `<span class="text-muted text-decoration-line-through">${product.originalPrice}</span> ${product.price}` : product.price}
-//                 </div>
-//               </div>
-//               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-//                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">${product.sale ? 'Add to cart' : 'View options'}</a></div>
-//               </div>
-//             </div>
-//           `;
-//           productDiv.insertAdjacentHTML('beforeend', productCard);
-
-//           searchResultsContainer.appendChild(productDiv);
-//         }
-//       });
-//     });
-//   } else {
-//     searchResultsContainer.innerHTML = '';
-//   }
-// }
-
-// // Event listener for the search input
-// document.getElementById('search-input').addEventListener('input', function (event) {
-//   const query = event.target.value;
-//   searchProducts(query);
-// });
