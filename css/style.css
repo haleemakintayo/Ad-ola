@@ -79,7 +79,7 @@ body {
 }
 
 .bigb{
-  background-image: url(../img/woman-shopping-vegetables-supermarket.jpg);
+  background-image: url(../img/woman-shopping-vegetables-supermarket\ .jpg);
   background-size: cover;
   height: 90vh;
   background-color: black;
@@ -221,7 +221,7 @@ body {
 
 @media (max-width: 575.98px) { 
   .bigb{
-    background-image: url(../img/woman-shopping-vegetables-supermarket\ mobile.jpg);
+    background-image: url(../img/woman-shopping-vegetables-supermarket\ mobile\ .jpg);
   }
  .gg{
   display: none;
